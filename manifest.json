@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "AdBlocker",
+  "version": "1.0",
+  "description": "Block all ads on web pages",
+  "permissions": ["*://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
